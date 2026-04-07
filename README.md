@@ -1,6 +1,6 @@
 # Public Dashboard Site Export
 
-This folder is ready to become a separate public GitHub Pages repository.
+This folder is the separate public GitHub Pages repository.
 
 ## Files included
 - `index.html`
@@ -9,11 +9,10 @@ This folder is ready to become a separate public GitHub Pages repository.
 - `aging_biomarkers_public/`
 - `data/series/` for the curated biomarker subset only
 
-## Suggested deployment
-1. Create a new GitHub repository for the public site only.
-2. Copy the contents of this folder into that repo root.
-3. Push the repo.
-4. Enable GitHub Pages from the repo root branch.
+## Suggested refresh flow
+1. Rebuild the audience-facing dashboard in `nhanes_dashboard`.
+2. Run `python3 scripts/export_public_dashboard_site.py` from the main repo.
+3. Commit and push the updated files in this repo.
 
 ## Notes
 - This export includes only the files needed by the audience-facing dashboard.
